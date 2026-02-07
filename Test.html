@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Axior University | Learn by Doing</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; background: #f0f2f5; color: #333; }
+        header { background: #2c3e50; color: white; padding: 2rem; text-align: center; }
+        .container { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; padding: 20px; }
+        
+        /* Card Styles */
+        .card { background: white; border-radius: 15px; padding: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease; cursor: pointer; border-bottom: 5px solid transparent; }
+        .card:hover { transform: translateY(-10px); }
+        .english { border-color: #3498db; }
+        .science { border-color: #2ecc71; }
+        .psych { border-color: #9b59b6; }
+        
+        h2 { margin-top: 0; }
+        .btn { display: inline-block; background: #333; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; margin-top: 10px; }
+        
+        /* Pulse Animation for Kinesthetic Feel */
+        @keyframes pulse { 0% { transform: scale(1); } 50% { transform: scale(1.05); } 100% { transform: scale(1); } }
+        .active-btn { animation: pulse 2s infinite; background: #e67e22; border: none; color: white; padding: 15px; width: 100%; border-radius: 10px; font-weight: bold; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Axior University</h1>
+    <p>Gunakan tanganmu, gerakkan tubuhmu, kuasai duniamu.</p>
+</header>
+
+<div class="container">
+    <div class="card english">
+        <h2>Vocabulary in Motion</h2>
+        <p>Belajar kata kerja bahasa Inggris dengan memeragakannya langsung di depan kamera.</p>
+        <a href="#" class="btn">Mulai Bergerak</a>
+    </div>
+
+    <div class="card science">
+        <h2>Virtual Chem-Lab</h2>
+        <p>Campurkan bahan kimia virtual dengan gestur tangan dan lihat reaksinya!</p>
+        <a href="#" class="btn">Buka Lab</a>
+    </div>
+
+    <div class="card psych">
+        <h2>Body Language Pro</h2>
+        <p>Latih postur tubuhmu untuk meningkatkan hormon kepercayaan diri.</p>
+        <a href="#" class="btn">Mulai Simulasi</a>
+    </div>
+</div>
+
+<div style="padding: 20px;">
+    <button class="active-btn">ISTIRAHAT AKTIF: Lakukan 10 Jumping Jacks untuk Buka Level Baru!</button>
+</div>
+
+</body>
+</html>
